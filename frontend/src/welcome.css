@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@400;700&display=swap');
+.welcome-container  {
+    position: relative;
+    margin-top: 250px; /* Adjust this value to position the text further down */
+    text-align: center;
+    color: #4b4b4b;;
+    font-family: 'Noto Serif Georgian', serif;
+}
+
+.welcome-title {
+    
+    padding: 20px;
+    font-size: 30px;
+}
+
+.info {
+    box-shadow: 1px 2px 9px #469689;
+    margin: 4em;
+    padding: 1em;
+}
+.welcome-image{
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width:1600px){
+    .welcome-container {
+        text-align: center; /* Center align the title */
+        margin-top: 230px;
+
+    }
+    .welcome-title {
+        font-size: 2.5em; /* Adjust the font size as needed */
+        margin-bottom: 0px; /* Space between title and content */
+    }
+    
+    .content {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between; /* Create space between the text and the image */
+        padding: 5px; /* Optional: Add some padding */
+        box-sizing: border-box;
+    }
+    
+    .info {
+        flex: 0.6; /* Make the text container 60% of the space */
+        font-size: 1.2em;
+        margin-right: 10px; /* Space between text and image */
+        text-align: left; /* Align text to the left */
+        padding: 10px; /* Add some padding inside the box */
+    }
+    
+    .welcome-image {
+        flex: 0.5; /* Make the image container 40% of the space */
+        max-width: 350px; /* Restrict the image width */
+        height: auto; /* Maintain aspect ratio */
+        margin-top: -70px; /* Move the image slightly upwards */
+        margin-right: 100px; /* Adds space between the image and the right border */
+        }
+}
+@media screen and (max-width:1320px){
+    .welcome-container {
+        text-align: center; /* Center align the title */
+        margin-top: 170px;
+
+    }
+    .welcome-image {
+        max-width: 280px;
+        margin-top: -30px;
+    }
+}
+@media screen and (max-width:960px){
+    .welcome-container {
+        margin-top: 100px;
+
+    }
+    .welcome-title{
+        padding: 15px;
+        font-size: 25px;  
+    }
+    .info{
+        margin-top: 3px;
+    }
+    .welcome-image {
+        max-width: 200px;
+        margin-top: -20px;
+    }
+
+}
+@media screen and (max-width:700px){
+    .welcome-container {
+        margin-top: 70px;
+
+    }
+    .welcome{
+        margin-top: 12%;
+    }
+    .welcome .msg{
+        padding: 12px;
+        font-size: 20px;
+    }
+    .info {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    .welcome-image {
+        max-width: 170px;
+        margin-top: -10px;
+        margin-right: 60px; 
+    }
+}
+@media screen and (max-width:560px){
+    .welcome-container {
+        margin-top: 10px;
+
+    }
+    .welcome{
+        margin-top: 5%;
+    }
+    .welcome .msg{
+        padding: 7px;
+
+    }
+    .welcome-image {
+        max-width: 150px;
+        margin-top: -10px;
+        margin-right: 30px; 
+    }
+
+}
+
+@media screen and (max-width:440px){
+    
+    .info {
+        box-shadow: none;
+        text-align: center;
+        font-size: 15px;
+        position:absolute;
+        margin:0;
+        
+    }
+    .welcome-image{
+        margin-top:130px;
+        margin-left:30%;
+    }
+    
+    .welcome .msg{
+        font-size: 17px;
+    }
+}
+
+
+
+@media screen and (max-width:440px){
+    
+    .info {
+        box-shadow: none;
+        text-align: center;
+        font-size: 15px;
+        position:absolute;
+        margin:0;
+        
+    }
+    .welcome-image{
+        margin-top:130px;
+        margin-left:30%;
+    }
+    
+    .welcome .msg{
+        font-size: 17px;
+    }
+}

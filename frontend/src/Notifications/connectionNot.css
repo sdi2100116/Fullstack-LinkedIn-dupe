@@ -1,0 +1,60 @@
+.cnotifications {
+    padding: 20px;
+}
+
+.cnotificationsTitle {
+    font-size: 24px;
+    color: #469689;
+    margin-bottom: 20px;
+}
+
+.cnotificationsList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cnotificationsList li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.cnotificationsText {
+    font-size: 16px;
+}
+
+.cnotificationsnoText{
+    margin-left: 25px;
+}
+.cnotificationsAcceptReject {
+    margin-top: 10px;
+    
+}
+
+.cnotificationsAccept {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+.cnotificationsAccept:hover {
+    background-color: #218838;
+}
+
+.cnotificationsReject {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cnotificationsReject:hover {
+    background-color: #c82333;
+}

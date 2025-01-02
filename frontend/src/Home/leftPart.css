@@ -1,0 +1,46 @@
+.user-profile-box {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  max-width: 400px;
+  margin: 0 auto;
+  position: fixed; 
+  left: -40px; 
+  top: 120px;
+  background-color: #e2f3f3; 
+  border-color: #469689; 
+}
+
+.user-profile-box h2 {
+  margin-bottom: 16px;
+  margin-top: 0px;
+  font-size: 24px;
+  color: #333;
+}
+
+.user-details p {
+  margin: 8px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.user-details strong {
+  color: #000;
+}
+
+.user-link {
+  margin-left: 30px;
+  color: black;
+  text-decoration: none;
+}
+
+.user-link:hover {
+  text-decoration: underline;
+}
+
+/* Media query to hide the user-profile-box on smaller screens */
+@media screen and (max-width: 660px) {
+  .user-profile-box {
+      display: none; /* Hide the box on smaller screens */
+  }
+}

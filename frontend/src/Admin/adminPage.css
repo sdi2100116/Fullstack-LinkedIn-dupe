@@ -1,0 +1,181 @@
+.adminPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  margin-top: 140px;
+  position: relative;
+  
+}
+
+
+.titleAdmin {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  font-family: 'Droid Serif', serif;
+  position:fixed;
+  z-index: 2;
+}
+
+
+.exportAdmin {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 100px;
+  z-index: 0;
+}
+
+.labelAdmin {
+  font-size: 1.2rem;
+  margin-right: 10px;
+  color: #555;
+}
+
+.selectAdmin {
+  padding: 5px;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+.optionAdmin {
+  padding: 5px;
+}
+
+.buttonAdmin {
+  background-color: #469689;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.buttonAdmin:hover {
+  background-color: #2c5e56;
+}
+
+
+/* User list items */
+.listusersAdmin {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+
+
+
+.listusersAdmin li:last-child {
+  border-bottom: none;
+}
+
+
+
+.checkusersAdmin {
+  margin-right: 10px;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+
+.linkusersAdmin {
+  color: #469689;
+  text-decoration: none;
+  font-size: 1.1rem;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+
+.listusersAdmin li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0;
+  border-radius: 8px;
+  
+}
+
+/* Background color for selected users */
+.selectedUser {
+  background-color: #f1f1f1 /* Light blue color */
+}
+
+/* Hover effect for all items */
+.listusersAdmin li:hover {
+  background-color: #f1f1f1;
+}
+
+.usersAdmin {
+  width: 80%; /* Adjust this value as needed */
+  max-width: 800px; /* Optional: set a maximum width */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* Add margin for spacing */
+}
+
+.titleusersAdmin{
+  color:#469689
+}
+
+@media screen and (max-width:1400px){
+  .adminPage {
+    margin-top: 80px;
+  }
+  .titleAdmin {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width:960px){
+  .adminPage {
+    margin-top: 43px;
+  }
+  .titleAdmin {
+    font-size: 15px;
+  }
+  .exportAdmin {
+    margin-top: 60px;
+  }
+}
+@media screen and (max-width:700px){
+  .adminPage {
+    margin-top: 28px;
+  }
+  .titleAdmin {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width:560px){
+  
+  .titleAdmin {
+    font-size: 30px;
+    color:#469689;
+    margin-top:-20px;
+    position:relative;
+  }
+  .exportAdmin {
+    margin-top: 30px;
+  }
+
+}
+@media screen and (max-width:490px){
+  .labelAdmin {
+    font-size: 1rem;
+    margin-right: 5px;
+  }
+  
+  .buttonAdmin {
+    padding: 7px 10px;
+  }
+
+}

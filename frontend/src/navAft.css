@@ -1,0 +1,104 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #469689;
+    padding: 10px;
+    width: 100%; /* Ensures full width */
+    max-width: 14000px; /* Limits the max width */
+    margin: 0 auto; /* Centers the navbar */
+}
+
+/* Logo adjustments */
+.navbar-logo {
+    margin-right: 10px; 
+}
+
+.logo-image {
+    height: 60px; /* Default size for desktop */
+    width: auto;  
+}
+
+/* Main menu styling */
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    flex: 1;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+}
+
+.navbar-item {
+    color: #fff;
+    padding: 15px 10px; /* Default padding for desktop */
+    cursor: pointer;
+    font-size: 18px; /* Default font size */
+    transition: background-color 0.3s;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+/* Hover effect for desktop */
+.navbar-item:hover {
+    background-color: #2c5e56;
+}
+
+.navbar-item.active {
+    background-color: #0a443b;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* ------- Changes start from here for mobile screens ------- */
+
+/* For screens 761px and below, apply mobile layout */
+@media screen and (max-width: 761px) {
+    .navbar-menu {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+        grid-auto-rows: auto; /* Adjust row height based on content */
+        gap: 10px; /* Add space between the columns */
+        width: 100%; /* Ensure the menu takes full width */
+    }
+
+    /* Center the last item "Settings" */
+    .navbar-item:nth-child(7) {
+        grid-column: span 2; /* Make it span both columns */
+        justify-self: center; /* Center horizontally */
+        text-align: center;
+    }
+
+    /* Adjust item alignment and sizing for smaller screens */
+    .navbar-item {
+        text-align: center;
+        padding: 10px 0; /* Smaller padding */
+        font-size: 14px; /* Slightly smaller font */
+    }
+
+    .logo-image {
+        height: 50px; /* Smaller logo for mobile */
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .navbar-logo {
+        display: none; /* Hide logo on very small screens */
+    }
+    
+    .navbar-item {
+        font-size: 13px; /* Smaller font for better fit */
+        padding: 8px 0; /* Adjust padding */
+    }
+}
+
+@media screen and (max-width: 585px) {
+    .navbar-menu {
+        gap: 5px; /* Smaller gap between columns for extra-small screens */
+    }
+
+    .navbar-item {
+        font-size: 12px; /* Final font adjustment for tiny screens */
+        padding: 6px 0;
+    }
+}

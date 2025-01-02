@@ -1,0 +1,88 @@
+.chEmail {
+    box-shadow: 1px 2px 9px #469689;
+    border-radius: 8px;
+    max-width: 90%; 
+    padding: 16px; 
+    margin: 10px auto; 
+    text-align: center;
+}
+
+.chEmailTitle {
+    color: #469689;
+    margin-top: 10px;
+}
+
+.chEmailButton {
+    background-color: #469689;
+    border-radius: 4px; 
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 12px 16px; 
+    font-size: 16px; 
+    transition: background-color 0.3s; 
+}
+
+.chEmailButton:hover {
+    background-color: #2c5e56;
+}
+
+.chEmailForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center; 
+}
+
+.chEmailLabel {
+    margin-right: 5px;
+}
+
+.chEmailInput {
+    border: 1px solid #469689;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%; 
+    max-width: 400px; 
+    padding: 8px; 
+}
+
+.chEmailInput:focus {
+    border-color: #469689; 
+    outline: none; 
+    box-shadow: 1px 2px 9px #469689;
+}
+
+
+
+@media (max-width: 768px) {
+    .chEmail {
+        max-width: 95%; 
+        padding: 12px; 
+    }
+
+    .chEmailButton {
+        padding: 10px 14px; 
+        font-size: 14px; 
+    }
+
+    .chEmailInput {
+        font-size: 14px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .chEmail {
+        max-width: 100%; 
+        padding: 10px; 
+    }
+
+    .chEmailButton {
+        padding: 8px 12px; 
+        font-size: 12px; 
+    }
+
+    .chEmailInput {
+        font-size: 12px; 
+    }
+}

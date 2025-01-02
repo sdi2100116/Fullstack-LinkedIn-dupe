@@ -1,0 +1,90 @@
+.createJob {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #469689;
+}
+
+.createJob h2 {
+    color: #469689;
+    text-align: center;
+}
+
+.createJob form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Space between columns */
+}
+
+.form-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.createJob input[type="text"],
+.createJob textarea {
+    padding: 6px;
+    border: 1px solid #469689;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 10px; /* Add some spacing between inputs */
+}
+
+.createJob textarea {
+    resize: vertical;
+    min-height: 20px;
+}
+
+.createJob input[type="text"]::placeholder,
+.createJob textarea::placeholder {
+    color: #64978f; 
+    font-family: Arial, sans-serif;
+}
+
+.createJob input[type="text"]:focus,
+.createJob textarea:focus {
+    border-color: #469689; 
+    outline: none; 
+    box-shadow: 1px 2px 9px #469689;
+}
+
+/* Button styling */
+.createJob button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #469689;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.createJob button:hover {
+    background-color: #2c5e56;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column; /* Stack columns on smaller screens */
+    }
+
+    .createJob input[type="text"],
+    .createJob textarea {
+        font-size: 14px;
+    }
+
+    .createJob button {
+        font-size: 14px;
+    }
+}

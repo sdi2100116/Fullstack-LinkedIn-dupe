@@ -1,0 +1,27 @@
+.cnotificationNumber {
+    position: absolute;
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    top: 20px;
+    left: 1090px;
+}
+
+.cnotificationNumber p {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}

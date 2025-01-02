@@ -1,0 +1,91 @@
+/* Container for the entire search section */
+
+.search {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    
+  }
+  
+  /* Title styling */
+  .searchTitle {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #469689;
+    margin-bottom: 15px;
+  }
+  
+  /* Search bar styling */
+  .searchBar input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #469689;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+
+  }
+  
+  /* Search bar focus effect */
+  .searchBar input:focus {
+    outline: none;
+    border: 2px solid #469689;
+    margin-bottom: 0px;
+  }
+  
+
+  .searchUsers {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    
+  }
+  
+ 
+  .searchUsers li {
+    padding: 0px;
+    
+    cursor: pointer;
+    
+  }
+
+  .searchUsers li a {
+    display: block; 
+    padding: 0px;
+    margin-left: 4px;
+    color: #316b61;
+    text-decoration: none;
+  }
+  
+  
+  
+
+  .searchUsers li:hover {
+    border: 1px solid #469689;
+    border-radius: 2px;
+  }
+  
+
+  
+  @media (max-width: 600px) {
+    .search {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    .searchTitle {
+      font-size: 20px;
+    }
+  
+    .searchBar input {
+      font-size: 14px;
+    }
+  }
+
+.noUsers{
+    text-align: center;
+}

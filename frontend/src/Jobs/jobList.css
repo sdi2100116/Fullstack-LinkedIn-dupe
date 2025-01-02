@@ -1,0 +1,154 @@
+.jobListings {
+    padding: 20px; 
+    max-width: 800px; 
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    margin-bottom: 80px;
+    
+}
+
+.jobListings h2 {
+    text-align: center; 
+    font-size: 24px; 
+    color: #469689; 
+    margin-bottom: 20px; 
+    width: 100;
+}
+
+.jobListings h2 i {
+    margin-left: 20px;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.jobListings ul {
+    list-style-type: none;
+    padding: 15px;
+    margin: 0;
+    border: 1px solid #469689;
+    border-radius: 5px;
+    
+}
+
+.job-item {
+    display: flex;
+    align-items: center;
+    background-color: #fff; 
+    padding: 15px; 
+    margin-bottom: 15px; 
+    border-bottom: 1px solid #469689;
+}
+
+.job-image-container {
+    flex-shrink: 0;
+    width: 100px;  /* Set the width for the image */
+    height: 100px; /* Set the height for the image */
+    overflow: hidden; /* Ensure any overflow is hidden */
+    margin-right: 20px; /* Space between the image and the details */
+}
+
+.job-image {
+    width: 100%; /* Make sure the image fills the container */
+    height: 100%; /* Ensure the image covers the container */
+    object-fit: cover; /* Crop the image to fit within the square */
+    border-radius: 8px; /* Optional: Round the corners */
+}
+
+.job-details {
+    flex-grow: 1;
+}
+
+.job-details h3 {
+    font-size: 20px; 
+    color: black;
+    margin: 0 0 10px 0;
+}
+
+.job-details p {
+    font-size: 16px; 
+    color: black;
+    margin: 5px 0;
+}
+
+.apply-button {
+    background-color: #469689;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.apply-button:hover {
+    background-color: #2c5e56;
+}
+
+.applicants-section h4{
+    color:#469689
+}
+
+.applicants-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.applicants-section li {
+    margin-bottom: 10px;
+}
+
+.applicants-section a {
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold; 
+    transition: color 0.3s ease; 
+}
+
+.applicants-section a:hover {
+    color: #2c5e56; 
+}
+
+.matching-skills{
+    border: 1px solid #b7b7b7;
+    background-color: #eceaea;
+    border-radius: 3px;
+    width: 200px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.matching-skills h4{
+    margin-top: 0px;
+}
+
+.matching-skills p{
+    margin-top: -20px;
+}
+
+.job-details a {
+    color: #469689;
+    text-decoration: none;
+  }
+  
+  .job-details a:hover {
+    text-decoration: underline;
+  }
+
+.deleteButtonJobs{
+    background-color: #828181;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.deleteButtonJobs:hover{
+    background-color: #656464;
+}

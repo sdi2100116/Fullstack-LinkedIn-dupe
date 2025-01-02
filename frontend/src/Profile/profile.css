@@ -1,0 +1,184 @@
+.myusernameProfile {
+  font-size: 2rem;
+  font-family: 'Times New Roman', Times, serif;
+  position: absolute;
+  top: 130px;
+  left: 150px;
+  z-index: 1;
+  color: rgb(255, 255, 255);
+  background-color: #2a5e55;
+  border-radius: 8px;
+  padding: 7px 15px;
+}
+
+.myuserProfile img {
+  width: 150px; 
+  height: 150px; 
+  border-radius: 50%; 
+  object-fit: cover; 
+  display: block; 
+  border: 3px solid #2a5e55; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+  position: absolute;
+  top: 100px;
+  left: 10px;
+  z-index: 2;
+}
+
+/* profile.css */
+
+.myuserTitle {
+  font-size: 24px; /* Increases the font size for the title */
+  color: #469689; /* Changes the text color */
+  border-radius: 8px;
+  padding: 10px;
+  max-width: 350px; 
+  margin-top: 200px;
+  margin-left: 15px;
+}
+
+/* Container for the form */
+.myuserForm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  margin-left: 10px;
+  margin-top: -30px;
+  width: 90%; /* Updated to prevent overflow */
+  max-width: 600px; /* Limits maximum width */
+}
+
+/* Input field styling */
+.myuserForm input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #469689;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #333;
+}
+
+.myuserForm input[type="text"]:focus {
+  border: 1px solid #469689; /* Your desired color */
+  outline: none; /* Remove browser default outline */
+}
+
+/* Paragraph styling */
+.myuserForm p {
+  cursor: pointer;
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.myuserForm p:hover {
+  color: #469689;
+}
+
+/* Button styling */
+.myuserForm button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #469689;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.myuserForm button:hover {
+  background-color: #2a5e55;
+}
+
+.frameProfile {
+  position: absolute;
+  left: 1100px;
+  top: 100px;
+  background-color: #e2f3f3; 
+  border-color: #469689; 
+  border: 1px solid #2a5e55;
+  padding: 2px;
+  width: 400px;
+  border-radius: 8px;
+}
+
+.frameProfile p {
+  margin-left: 25px;
+}
+
+/* Media Queries for Responsiveness */
+
+@media screen and (max-width: 1200px) {
+  .myusernameProfile {
+      left: 65px;
+      margin-top: 200px; /* Adjust position for smaller screens */
+  }
+
+  .myuserProfile img{ 
+  
+    margin-top: 180px; /* Adjust position for smaller screens */
+}
+
+  .myuserForm {
+      max-width: 90%; /* Allow form to take more width */
+  }
+
+  .frameProfile {
+     display: none;
+      
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .myusernameProfile {
+     
+      top: 100px; /* Adjust top position */
+      margin-left: 15px; /* Add left margin for spacing */
+  }
+
+  .myuserProfile img {
+      width: 120px; 
+      height: 120px; 
+      margin-bottom: 10px; /* Add bottom margin for spacing */
+  }
+
+  .myuserTitle {
+      font-size: 20px; /* Adjust title size */
+      margin-top: 150px; /* Adjust top margin */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .myusernameProfile {
+      
+      padding: 5px; /* Reduce padding */
+      margin-left: 10px; /* Add left margin for spacing */
+  }
+
+  .myuserProfile img {
+      width: 100px; /* Smaller image */
+      height: 100px; /* Smaller image */
+      margin-bottom: 10px; /* Add bottom margin for spacing */
+  }
+
+  .myuserForm {
+      padding: 5px; /* Reduce form padding */
+  }
+
+  .myuserForm button {
+      padding: 6px 12px; /* Smaller button */
+      font-size: 12px; /* Smaller font size */
+  }
+
+  .frameProfile {
+      width: 100%; /* Make frame full width on small screens */
+      left: 0; /* Center frame */
+  }
+}

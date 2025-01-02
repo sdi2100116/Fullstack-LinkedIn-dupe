@@ -1,0 +1,114 @@
+.education {
+   /* Sets a maximum width for the form container */
+   margin: 0 auto; /* Centers the container horizontally */
+   padding: 10px; /* Adds padding inside the container */
+   background-color: #f9f9f9; /* Light background color for the form */
+}
+
+.educationTitle {
+   font-size: 24px; /* Increases the font size for the title */
+   margin-bottom: 0px; /* Adds space below the title */
+   color: #469689; /* Dark text color for better readability */
+   border-radius: 8px;
+   padding: 10px;
+   max-width: 350px; 
+   margin-right: auto; /* Center the title horizontally */
+}
+
+.educationForm {
+   border: 1px solid #ddd; /* Light border for the form */
+   border-radius: 8px;
+   background-color: #f9f9f9; /* Same background as .education */
+   padding: 10px;
+   display: grid; 
+   grid-template-columns: repeat(2, 1fr); /* Change to 2 columns for desktop */
+   grid-auto-rows: 2em;
+   max-width: 1600px; /* Same width limit as .education */
+   
+}
+
+.educationLabel {
+   display: block; /* Ensures the label is on a new line */
+   font-size: 16px; /* Font size for the label */
+   color: #333; /* Dark color for readability */
+}
+
+.educationForm input[type="text"],
+.educationForm input[type="date"] {
+   font-size: 16px; /* Increases the font size of the input text */
+   padding: 10px; /* Adds padding inside the input fields */
+   margin-right: 15px; /* Adds space below each input field */
+   border: 1px solid #ddd; /* Light border for input fields */
+   border-radius: 4px; /* Rounds the corners of the input fields */
+}
+
+.educationForm button {
+   font-size: 16px; /* Sets the font size of the button text */
+   border: none; /* Removes the default border */
+   border-radius: 4px; /* Rounds the corners of the buttons */
+   cursor: pointer; /* Changes cursor to a pointer on hover */
+   transition: background-color 0.3s; /* Smooth transition for background color */
+   margin-right: 15px;
+   
+   width: 100%; /* Make buttons full width */
+   
+
+}
+
+/* Specific Button Styles */
+.publicButton {
+   background-color: #469689; /* Green for Public */
+   color: white; /* White text */
+   height: 30px;
+   
+   
+}
+
+.privateButton {
+   background-color: #5a6268; /* Red for Private */
+   color: white; /* White text */
+   height: 30px;
+
+}
+
+.educationForm button[type="submit"] {
+   background-color: #469689; /* Primary button color */
+   color: white; /* Text color of the button */
+   
+}
+
+.educationForm button[type="submit"]:hover {
+   background-color: #2c5e56; /* Darker shade of the primary color on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 900px) {
+   .educationForm {
+       grid-template-columns: 1fr; /* Stack inputs in a single column for mobile */
+   }
+
+   .educationTitle {
+       font-size: 20px; /* Adjust title size for smaller screens */
+       padding-bottom: 10px; /* Reduce padding */
+   }
+
+   .educationForm input[type="text"],
+   .educationForm input[type="date"],
+   .educationForm button {
+       width: 100%; /* Make inputs and buttons full width */
+       margin-right: 0; /* Remove right margin */
+       margin-bottom: 10px; /* Add space between fields */
+       
+   }
+}
+
+@media screen and (max-width: 600px) {
+   .educationTitle {
+       font-size: 18px; /* Further reduce font size */
+   }
+
+   .educationForm {
+       padding: 5px; /* Reduce padding */
+   }
+  
+}

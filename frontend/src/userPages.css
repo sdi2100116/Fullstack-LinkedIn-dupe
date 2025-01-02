@@ -1,0 +1,208 @@
+.userProfile {
+  position: fixed;
+  z-index: 10;
+}
+
+.usernameProfile {
+  font-size: 2rem;
+  font-family: 'Times New Roman', Times, serif;
+  position: fixed;
+  top: 190px;
+  left: 180px;
+  z-index: 1;
+  color: rgb(255, 255, 255);
+  background-color: #2a5e55;
+  border-radius: 8px;
+  padding: 7px 15px;
+}
+
+.userProfile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  border: 3px solid #2a5e55;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 160px;
+  left: 40px;
+  z-index: 2;
+}
+
+.connectedButtonProfile,
+.connectButtonProfile,
+.pendingButtonProfile {
+  padding: 7px 15px;
+  width: 140px;
+  background-color: #2a5e55;
+  position: fixed;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  z-index: 2;
+  color: white;
+  font-size: 1.5rem;
+  top: 220px;
+}
+
+.connectedButtonProfile {
+  right: 250px;
+}
+
+.connectButtonProfile {
+  right: 250px;
+}
+
+.connectButtonProfile:hover {
+  background-color: #1d403b;
+}
+
+.pendingButtonProfile {
+  right: 250px;
+}
+
+.profileSections {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Ensures responsiveness */
+  margin-top: 20px;
+  width: 1450px;
+  margin-left: 35px;
+  gap: 15px;
+  margin-bottom: 100px;
+}
+
+.profileSection {
+  flex: 1;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #ececec;
+}
+
+/* Styles specific to Skills, Education, and Experience */
+.skillsProfile,
+.educationProfile,
+.experienceProfile {
+  list-style-type: none;
+  border: 1px solid grey;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 0;
+}
+
+.skillsProfile h2,
+.educationProfile h2,
+.experienceProfile h2 {
+  color: #469689;
+  margin-bottom: 5px;
+  font-size: 24px;
+  font-family: 'Arial', sans-serif;
+  margin-top: 0px;
+}
+
+.skillsProfile li,
+.educationProfile li,
+.experienceProfile li {
+  font-size: 16px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid grey;
+}
+
+.educationProfile li div,
+.experienceProfile li div {
+  color: grey;
+  font-size: 14px;
+}
+
+.bioProfile1 {
+  margin-left: 35px;
+  border: 1px solid grey;
+  padding: 10px;
+  border-radius: 8px;
+  width: 1450px;
+  background-color: #ececec;
+  position: sticky;
+}
+
+.bioProfile2 {
+  margin-top: 350px;
+  margin-left: 35px;
+  border: 1px solid grey;
+  padding: 10px;
+  border-radius: 8px;
+  width: 1450px;
+  background-color: #ececec;
+  position: sticky;
+}
+
+.bioProfile1 h4 {
+  color: #469689;
+  margin-top: 0px;
+}
+
+.bioProfile2 h4 {
+  color: #469689;
+  margin-top: 0px;
+}
+
+.messageProfile {
+  padding: 10px;
+  background-color: #2a5e55;
+  position: fixed;
+  border: 1px solid black;
+  border-radius: 3px;
+  z-index: 2;
+  cursor: pointer;
+  color: white;
+  right: 70px;
+  top: 220px;
+}
+
+.messageProfile:hover {
+  background-color: #17332f;
+}
+
+.messageformProfile {
+  margin-top: 350px;
+  margin-left: 40px;
+  width: calc(100% - 80px); /* Full width minus margins */
+  max-width: 1200px; /* Updated max width */
+}
+
+.messageformProfile input {
+  border: 1px solid grey;
+  width: 80%; /* Full width for mobile */
+  height: 100px;
+  border-radius: 8px;
+  background-color: #ececec;
+  box-sizing: border-box; /* Ensure padding does not affect total width */
+  margin-bottom: 20px;
+  margin-left: 0px;
+}
+
+.messageformProfile input:focus {
+  outline: none;
+  border: 1px solid #469689; /* Change border color on focus */
+}
+
+.messageformProfile button {
+  color: white;
+  background-color: #469689;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  height: 100px; /* Height of the button */
+  width: 120px; /* Width of the button */
+  margin-left: 10px; /* Space between input and button */
+}
+
+.messageformProfile button:hover {
+  background-color: #2a5e55; /* Change color on hover */
+}
+

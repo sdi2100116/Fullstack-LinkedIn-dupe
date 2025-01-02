@@ -1,0 +1,41 @@
+.pnotifications {
+    padding: 20px;
+}
+
+.pnotificationsTitle {
+    font-size: 24px;
+    color: #469689;
+    margin-bottom: 20px;
+}
+
+.pnotificationsList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.pnotificationsList li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.pnotificationsText {
+    font-size: 16px;
+}
+
+.pnotificationsnoText{
+    margin-left: 25px;
+}
+
+.pnotificationsDelete {
+    background-color: #d34b4b;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pnotificationsDelete:hover {
+    background-color: #983737;
+}

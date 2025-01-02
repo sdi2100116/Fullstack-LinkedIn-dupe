@@ -1,0 +1,205 @@
+
+.main-nav {
+    background-color: #f4f4f4;
+    padding: 20px;
+    position: sticky;
+    top: 240px;
+    display: flex; /* Add Flexbox */
+    justify-content: right; /* Center the items horizontally */
+    align-items: center;
+
+}
+
+nav ul {
+    white-space: nowrap;
+    margin: 0; 
+    padding: 0;
+    list-style: none; /* Remove default list styling */
+    display: flex; /* Display flex for horizontal alignment */
+    gap: 50px; /* Add space between the list items */
+}
+
+nav li {
+    font-size: 22px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #4b4b4b;
+}
+
+nav li a:hover {
+    text-decoration: underline;
+}
+
+.main-nav form {
+    display: flex; /* Make form elements align horizontally */
+    align-items: center; /* Align input and button vertically */
+}
+.main-nav form input {
+    padding: 8px;
+    margin-right: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    flex-grow: 1; 
+}
+
+.main-nav ul li button {
+    width: 100%;  /* Set width to 100% of its container */
+    height: 30px;  /* Set height of the button */
+    padding: 0px 10px;  /* Padding inside the button */
+    font-size: 20px;  /* Increase the font size */
+    background-color: #4b4b4b;  /* Background color of the button */
+    color: white;  /* Text color */
+    border: none;  /* Remove the border */
+    border-radius: 5px;  /* Rounded corners */
+    cursor: pointer;  /* Pointer cursor on hover */
+    display: inline-block;  
+    margin: 0 auto;  /* Center the button */
+    text-align: center;  /* Center text inside the button */
+    box-shadow: 0px 4px 6px #0000001a; 
+}
+
+.main-nav ul li button:hover {
+    background-color: #333;  /* Darker color on hover */
+}
+
+.main-nav .button{
+    width: 30%;
+}
+
+@media screen and (max-width:1400px){
+    .main-nav{
+        top:150px;
+        padding: 15px;
+    }
+    nav ul{
+        gap: 40px;
+    }
+    nav li {
+        font-size: 20px;
+    }
+    .main-nav form input {
+        padding: 5px;
+        margin-right: 10px;
+        font-size: 15px;
+    }
+    
+    .main-nav ul li button {
+        height: 25px;  /* Set height of the button */
+        font-size: 17px;  /* Increase the font size */
+    }
+}
+
+@media screen and (max-width:960px){
+    .main-nav{
+        top:90px;
+        padding: 10px;
+    }
+    nav ul{
+        gap: 30px;
+    }
+    nav li {
+        font-size: 17px;
+    }
+    .main-nav form input {
+        padding: 3px;
+        margin-right: 8px;
+        font-size: 14px;
+    }
+    
+    .main-nav ul li button {
+        height: 21px;  /* Set height of the button */
+        font-size: 15px;  /* Increase the font size */
+    }
+}
+
+@media screen and (max-width:700px){
+    .main-nav{
+        top:70px;
+    }
+}
+@media screen and (max-width:560px){
+    .main-nav{
+        top:50px;
+    }
+    nav ul{
+        gap: 30px;
+    }
+    nav li {
+        font-size:20px;
+        display: block;
+        width:100% ;
+        margin: 10px 0;
+        padding: 0;
+    }
+    .main-nav form input {
+        padding: 5px;
+        margin-right: 10px;
+        font-size: 15px;
+    }
+    
+    .main-nav ul li button {
+        height: 25px;  /* Set height of the button */
+        font-size: 17px;  /* Increase the font size */
+    }
+}
+
+@media screen and (max-width:560px){
+    .main-nav{
+        top:50px;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:470px){
+    nav ul{
+        gap: 20px;
+    }
+    nav li {
+        font-size:17px;
+        display: block;
+        width:100% ;
+        margin: 10px 0;
+        padding: 0;
+    }
+    .main-nav form input {
+        padding: 4px;
+        margin-right: 7px;
+        font-size: 15px;
+        width: 135px;
+    }
+    
+    .main-nav ul li button {
+        height: 25px;  /* Set height of the button */
+        font-size: 17px;  /* Increase the font size */
+    }
+}
+
+@media screen and (max-width:370px){
+    nav ul{
+        gap: 0px;
+    }
+    
+    nav ul{
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+    }
+    .main-nav ul li button {
+        margin-top:7px;
+    }
+    .main-nav form input{
+        width: 150px;
+        margin-top:7px;
+    }
+    nav li {
+        text-align: center; 
+        margin-top: 5px; 
+    }
+    .main-nav{
+        padding:1px;
+    }
+    
+}

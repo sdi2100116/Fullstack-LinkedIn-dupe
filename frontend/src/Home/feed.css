@@ -1,0 +1,204 @@
+/* feed.css */
+
+/* General feed styles */
+.feed {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  border: 1px solid #469689;
+  border-radius: 5px;
+}
+
+/* Title styles */
+.feed-title {
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #469689;
+}
+
+.feed-title i {
+  margin: 0 10px;
+}
+
+
+.feed-recommended-section {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  
+}
+
+.feed-recommended-section h3 {
+  margin: 0;
+  font-style: italic;
+  color: #666;
+}
+
+/* Post styles */
+.feed > div {
+  border-bottom: 1px solid #469689;
+  padding: 15px 0;
+  margin-bottom: 15px;
+}
+
+.feed > div h2 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.feed > div p {
+  margin: 10px 0;
+}
+
+/* Date and author styles */
+.postDate {
+  color: #999;
+  font-size: 0.9em;
+}
+
+.postAuthor {
+  display: block;
+  color: #666;
+}
+
+.postAuthor a {
+  color: #469689;
+  text-decoration: none;
+}
+
+.postAuthor a:hover {
+  text-decoration: underline;
+}
+
+/* Button styles */
+.likeButton {
+  background: none;
+  border: none;
+  color: #469689;
+  cursor: pointer;
+  font-size: 1.2em;
+  margin-right: 10px;
+}
+
+
+.commentFeed, .showComments {
+  background: #469689;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 0.9em;
+  margin-right: 10px;
+}
+
+.commentFeed:hover, .showComments:hover {
+  background: #2c5e56;
+}
+
+
+.comment-form {
+  margin-top: 10px;
+}
+
+.comment-form textarea {
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-size: 0.9em;
+  box-sizing: border-box;
+}
+
+.comment-form button {
+  background: #469689;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.comment-form button:hover {
+  background: #2c5e56;
+}
+
+.postImage {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.postImage:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.postVideo {
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 2px solid #ddd; 
+  background-color: #000; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  margin-bottom: 20px;
+  width: 500px;
+  height: 500px;
+}
+
+
+.postVideo:hover {
+  transform: scale(1.02); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+.postAudio {
+  border-radius: 5px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  border: 1px solid #ddd; 
+  background-color: #f8f8f8; 
+  padding: 10px; 
+  transition: box-shadow 0.3s ease, transform 0.3s ease; 
+  margin-bottom: 20px;
+}
+
+
+.postAudio:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+  transform: scale(1.02); 
+}
+
+
+
+.deleteButton{
+  margin-left: 390px;
+  background: #aeaba7;
+  border: none;
+  padding: 5px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.deleteButton:hover{
+ 
+  background: #7f7e7b;
+  
+}
+
+.feed-recommended-section > div {
+  border-bottom: 1px solid #469689;
+  padding: 15px 0;
+  margin-bottom: 15px;
+}

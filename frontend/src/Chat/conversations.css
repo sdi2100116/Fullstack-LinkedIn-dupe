@@ -1,0 +1,95 @@
+.ConvosMess {
+    display: flex;
+    gap: 100px;
+}
+
+.Convos {
+    flex: 1;
+}
+
+.titleConvos {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #469689;
+}
+
+.listConvos {
+    list-style-type: none;
+    padding: 0;
+}
+
+.indConvos {
+    cursor: pointer;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    color: #469689;
+    text-align: center;
+    width: 590px; /* Adjust width for smaller screens */
+    margin-left: 10px;
+}
+
+.indConvos:hover {
+    background-color: #f0f0f0;
+}
+
+.Mess {
+    flex: 2;
+    margin-top: -100px; /* Adjust as needed */
+    margin-right: 20px;
+}
+
+.noConvos{
+    text-align: center;
+}
+
+.barConv {
+    color: #469689;
+    height: 600px;
+    border-left: 1px solid #ddd;
+    margin-top: -140px; /* Adjust as needed */
+    margin-left: 130px;
+}
+
+/* Media Queries for Responsiveness */
+
+@media screen and (max-width: 900px) {
+    .ConvosMess {
+        flex-direction: column; /* Stack elements vertically */
+        gap: 20px; /* Reduce gap between elements */
+    }
+
+    .Convos, .Mess {
+        flex: none; /* Remove flex properties to allow stacking */
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    .titleConvos {
+        font-size: 1.3rem; /* Slightly reduce font size */
+    }
+
+    .indConvos {
+        width: auto; /* Allow the individual convo items to auto width */
+        padding: 1rem; /* Increase padding for touch targets */
+        margin-left: 0; /* Reset margin */
+    }
+
+    .barConv {
+        height: auto; /* Allow bar to adjust based on content */
+        margin-top: 0; /* Reset margin for better spacing */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .titleConvos {
+        font-size: 1.1rem; /* Further reduce font size */
+    }
+
+    .indConvos {
+        padding: 1rem; /* Maintain padding for better touch targets */
+    }
+
+    .Mess {
+        margin-top: 0; /* Reset margin for better alignment */
+    }
+}

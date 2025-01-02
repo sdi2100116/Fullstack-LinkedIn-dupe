@@ -1,0 +1,104 @@
+/* Container for the form */
+.registration-container {
+  max-width: 600px; /* Adjusted width to accommodate two columns */
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #469689;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  margin-top: 260px; 
+}
+
+/* Header style */
+.registration-container h2 {
+  text-align: center;
+  font-size: 20px;
+  color: #469689;
+}
+
+.registration-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 10px; 
+}
+
+/* Adjust the form divs to fit the grid layout */
+.registration-form div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+/* Label styling */
+.registration-form label {
+  font-weight: bold;
+  font-size: 12px;
+  color: #469689;
+}
+
+/* Input fields styling */
+.registration-form input[type="text"],
+.registration-form input[type="password"],
+.registration-form input[type="email"],
+.registration-form input[type="tel"],
+.registration-form input[type="file"] {
+  width: 100%;
+  padding: 5px; /* Adjusted padding for better fit */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  
+}
+
+/* File input */
+.registration-form input[type="file"] {
+  padding: 2px; /* Reduced padding for file input */
+}
+
+/* Button styling */
+.registration-form button {
+  grid-column: span 2; /* Span across both columns */
+  background-color: #469689;
+  color: white;
+  border: none;
+  padding: 6px; /* Adjusted padding for a better fit */
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.registration-form button:hover {
+  background-color: #27534c;
+}
+
+/* Error messages */
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: -5px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width:700px){
+  .registration-container {
+    margin-top: 100px;
+  }
+}
+@media screen and (max-width:640px){
+  .registration-container {
+    max-width: 500px; 
+  }
+}
+@media screen and (max-width:560px){
+  .registration-container {
+    max-width: 400px; 
+    margin-top: 90px;
+  }
+}
+@media screen and (max-width:435px){
+  .registration-container {
+    max-width: 300px; 
+    margin-top: 60px;
+  }
+}
